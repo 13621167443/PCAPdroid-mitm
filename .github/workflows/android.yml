@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: git Actions
-      uses: srt32/git-actions@v0.0.3
+      run:  git submodule update --init
     - name: set up JDK 17
       uses: actions/setup-java@v3
       with:
